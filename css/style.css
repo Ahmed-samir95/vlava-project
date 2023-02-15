@@ -19,7 +19,12 @@ html{
 small , span{
     display: block;
 }
-
+:root{
+    --main-color: #85b0be;
+    --second-color: #95bbc7;
+    --third-color: #052C3F;
+    --forth-color: #4d8090;
+}
 
 /* --------------------------------------------------------------------------------- */
 
