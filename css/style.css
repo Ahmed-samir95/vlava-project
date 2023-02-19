@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 a{
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 ul{
@@ -22,10 +22,6 @@ ul{
 html{
     scroll-behavior: smooth;
     font-size: 10px;
-}
-
-body{
-    background-color: green;
 }
 
 small , span , a{
@@ -38,7 +34,25 @@ small , span , a{
     --third-color: #052C3F;
     --forth-color: #4d8090;
     --wh-color: #fff;
-    --main-transition: .3s;
+    --main-transition: .5s;
+}
+
+ .btn{
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+    background-color: transparent;
+    width: 17rem;
+    height: 4rem;
+    border: 0.2rem solid var(--main-color);
+    line-height: 4rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: background-color .5s;
+    margin: auto;
+}
+.btn:hover{
+    background-color: var(--main-color);
 }
 
 .container{
@@ -112,9 +126,6 @@ header{
         }
 }
 
-
-
-
 .header-content .nav li a{
     padding: 0 1.5rem;
     color: var(--wh-color);
@@ -149,8 +160,6 @@ header{
     }
 }
 
-
-
 .menu-icon div{
     display: block;
     height: 0.2rem;
@@ -175,10 +184,34 @@ header{
 .open.nav{
     transform: translateX(0);
 }
+/* --------------------------------------------------------------------------------- */
+.home{
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
 
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+}
 
+.home-content .home-title{
+    color: var(--wh-color);
+    font-size: 4rem;
+    font-weight: bold;
+}
 
-
-
+.home-content .home-desc{
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 1.5rem 0;
+    color: var(--wh-color);
+}
 
 
