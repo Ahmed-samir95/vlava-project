@@ -55,6 +55,27 @@ small , span , a{
     background-color: var(--main-color);
 }
 
+.section-heading{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.section-heading .section-heading-title{
+    margin-bottom: 1.5rem;
+    color: var(--third-color);
+    font-size: 4rem;
+}
+.section-heading .section-heading-desc{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+/*media for section-heading*/
+@media (max-width: 767px){
+    .section-heading .section-heading-desc{
+        line-height: 1.8;
+    }
+}
+
 .container{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
