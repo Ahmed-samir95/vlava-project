@@ -227,6 +227,11 @@ header{
     font-size: 4rem;
     font-weight: bold;
 }
+@media (max-width: 767px){
+    .home-content .home-title{
+        font-size: 3rem;
+    }
+}
 
 .home-content .home-desc{
     font-size: 2rem;
@@ -234,5 +239,46 @@ header{
     padding: 1.5rem 0;
     color: var(--wh-color);
 }
+/* ---------------------------------------------------------------------------------- */
+/* about */
+.about{
+    margin-top: 10rem;
+}
+
+@media (min-width: 768px){
+     .about-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+        grid-gap: 3rem;
+     }
+}
+
+.about-content .about-item .about-title{
+    color: var(--third-color);
+    padding-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.about-content .about-item .about-desc{
+    color: var(--forth-color);
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.about-content .about-item .about-info{
+     padding-bottom: 3rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
 
 
