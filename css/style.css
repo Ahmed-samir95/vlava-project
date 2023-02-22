@@ -259,6 +259,12 @@ header{
     font-size: 4rem;
 }
 
+@media (max-width: 768px){
+     .about-content .about-item .about-title{
+        font-size: 3rem;
+     }
+}
+
 .about-content .about-item .about-desc{
     color: var(--forth-color);
     font-size: 2rem;
