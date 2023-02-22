@@ -34,6 +34,7 @@ small , span , a{
     --third-color: #052C3F;
     --forth-color: #4d8090;
     --wh-color: #fff;
+    --bg-color: #F6F9FA;
     --main-transition: .5s;
 }
 
@@ -66,7 +67,7 @@ small , span , a{
 }
 .section-heading .section-heading-desc{
     color: var(--main-color);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 /*media for section-heading*/
@@ -81,6 +82,10 @@ small , span , a{
     padding-right: 1.5rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+.mg-t{
+    margin-top: 7rem;
 }
 /* media for contianer*/
 /*small*/
@@ -242,7 +247,7 @@ header{
 /* ---------------------------------------------------------------------------------- */
 /* about */
 .about{
-    margin-top: 10rem;
+    margin-top: 7rem;
 }
 
 @media (min-width: 768px){
@@ -278,9 +283,44 @@ header{
     font-weight: normal;
     line-height: 1.6;
 }
+/* ------------------------------------------------------------------------------------ */
+.services{
+    background-color: var(--bg-color);
+    padding: 2rem;
+}
 
+.services-content{
+    text-align: center;
+}
+@media(min-width: 768px){
+    .services-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+        grid-gap: 3rem;
+    }
+}
 
+.services-content .services-item:not(:last-child){
+    margin-bottom: 3rem;
+}
 
+.services-content .services-item:hover .services-title{
+    color: var(--forth-color);
+}
+
+.services-content .services-item i{
+
+}
+
+.services-content .services-item .services-title{
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.services-content .services-item .services-desc{
+    color: var(--third-color);
+    font-size: 1.7rem;
+}
 
 
 
