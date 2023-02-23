@@ -28,6 +28,10 @@ small , span , a{
     display: block;
 }
 
+img{
+    max-width: 100%;
+}
+
 :root{
     --main-color: #85b0be;
     --second-color: #95bbc7;
@@ -322,8 +326,46 @@ header{
     font-size: 1.7rem;
 }
 
+.services-box{
+    margin-top: 7rem;
+    text-align: center;
+}
 
+@media (min-width: 767px){
+    .services-box{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+        grid-gap: 3rem;
+    }
+}
 
+.services-box .box-item{
+    margin-top: 3rem;
+}
+
+.services-box .box-item img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.services-box .box-item .box-title{
+    padding: 1rem;
+    color: var(--third-color);
+    font-size: 2rem;
+}
+
+.services-box .box-item .box-desc{
+    padding: 1.5rem 0;
+}
+
+.services-box .box-item button{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.services-box .box-item button:hover{
+    color: var(--wh-color);
+}
 
 
 
