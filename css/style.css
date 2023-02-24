@@ -120,7 +120,7 @@ header{
     position: fixed;
     z-index: 900;
     padding: 1.5rem;
-}
+ }
 
 .header-content{
     display: flex;
@@ -313,7 +313,11 @@ header{
 }
 
 .services-content .services-item i{
+    font-size: 3rem;
+ }
 
+.services-content .services-item:hover i{
+    color: var(--forth-color);
 }
 
 .services-content .services-item .services-title{
@@ -368,5 +372,53 @@ header{
 }
 
 
+/* ---------------------------------------------------------------------------------- */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* btn to up */
+.btn-up{
+    background-color: var(--forth-color);
+    color: var(--wh-color);
+    border: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: none;
+    
+}
