@@ -48,7 +48,7 @@ img{
     font-size: 2rem;
     background-color: transparent;
     width: 17rem;
-    height: 4rem;
+    height: 4.5rem;
     border: 0.2rem solid var(--main-color);
     line-height: 4rem;
     border-radius: 1rem;
@@ -370,10 +370,60 @@ header{
 .services-box .box-item button:hover{
     color: var(--wh-color);
 }
-
-
 /* ---------------------------------------------------------------------------------- */
+/* portfolio */
+.portfolio .shuffle{
+    display: flex;
+    justify-content: center;
+}
 
+.portfolio .shuffle li {
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: normal;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+
+.portfolio .shuffle li.active, .portfolio .shuffle li:hover{
+    color: var(--main-color);
+}
+@media(min-width: 768px){
+    .portfolio-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+        grid-gap: 2rem;
+    }
+}
+
+.portfolio .portfolio-content .portfolio-item{
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio .portfolio-content .portfolio-item img{
+    border-radius: 1rem;
+}
+
+.portfolio .portfolio-content .portfolio-item .caption{
+    position: absolute;
+    left: 0;
+    padding: 2rem;
+    background-color: var(--third-color);
+    width: 100%;
+    transition: var(--main-transition);
+    bottom: -100%;
+}
+
+.portfolio .portfolio-content .portfolio-item .caption .caption-title{
+    color: var(--wh-color);
+    font-size: 2.3rem;
+}
+
+.portfolio .portfolio-content .portfolio-item:hover .caption{
+    bottom: 0;
+}
 
 
 
