@@ -424,14 +424,69 @@ header{
 .portfolio .portfolio-content .portfolio-item:hover .caption{
     bottom: 0;
 }
+/* ----------------------------------------------------------------------------------------------------- */
+/* team */
+@media (min-width:768px){
+    .team-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+        grid-gap: 4rem;
+        text-align: center;
+    }
+}
 
+.team-content .team-item{
+    transform: scale(1.1);
+    text-align: center;
+    margin-bottom: 4rem;
+}
 
+.team-content .team-item img{
+    position: relative;
+    padding-bottom: 1.5rem;
+    border-radius: 1rem;
+}
 
+.team-content .team-item .social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    opacity: 0;
+    padding-bottom: 0.5rem;
+    transition: opacity var(--main-transition);
+}
 
+.team-content .team-item:hover .social-icon{
+    opacity: 1;
+}
+.team-content .team-item .social-icon li a{
+    display: block;
+    padding: 0.5rem 0.8rem;
+    color: var(--third-color);
+    font-size: 2rem;
+    transition: color var(--main-transition);
+}
+.team-content .team-item .social-icon li a:hover{
+    color: var(--forth-color)
 
+}
 
+.team-content .team-item .team-name{
+    color: var(--third-color);
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
 
-
+.team-content .team-item .team-jop{
+    color: var(--forth-color);
+    font-size: 1.5rem;
+}
 
 
 

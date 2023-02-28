@@ -50,10 +50,11 @@ for (let i = 0; i < filterBtns.length; i++) {
             if (target == portfolioContent[k].getAttribute('data-id')) {
                 portfolioContent[k].style.display = 'block'
             }
+            if (target == 'all') {
+                portfolioContent[k].style.display = 'block'
+            }
         }
-        if (target == 'all') {
-            portfolioContent[k].style.display = 'block'
-        }
+        
     })
     
 }
