@@ -554,9 +554,12 @@ header{
 .pricing-item .btn:hover{
    background-color: var(--forth-color);
 }
-
-
-
+/* --------------------------------------------------------------------------------------------------------- */
+/* contact */
+.contact .mab iframe{
+    width: 100%;
+    margin-bottom: 2rem;
+}
 
 
 
