@@ -38,13 +38,13 @@ img{
     --third-color: #052C3F;
     --forth-color: #4d8090;
     --wh-color: #fff;
-    --bg-color: #F6F9FA;
+    --bg-color: #EFF5F7;
     --main-transition: .5s;
 }
 
  .btn{
     display: block;
-    color: #fff;
+    color: var(--wh-color);
     font-size: 2rem;
     background-color: transparent;
     width: 17rem;
@@ -426,6 +426,10 @@ header{
 }
 /* ----------------------------------------------------------------------------------------------------- */
 /* team */
+.team{
+    background-color: var(--bg-color);
+    padding: 2rem;
+}
 @media (min-width:768px){
     .team-content{
         display: grid;
@@ -439,6 +443,11 @@ header{
     transform: scale(1.1);
     text-align: center;
     margin-bottom: 4rem;
+}
+@media (max-width: 768px){
+   .team-content .team-item{
+     transform: scale(1);
+   }
 }
 
 .team-content .team-item img{
@@ -487,10 +496,64 @@ header{
     color: var(--forth-color);
     font-size: 1.5rem;
 }
+/* --------------------------------------------------------------------------------------------------- */
+.pricing-content{
+    text-align: center;
+}
+@media (min-width: 768px){
+    .pricing-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+        grid-gap: 2rem;
+    }
+}
 
+.pricing-item{
+    padding: 40px;
+    box-shadow: 0px 2px 1.5rem rgb(18 66 101 / 8%);
+}
 
+.pricing-item:nth-child(2){
+    background-color: var(--bg-color);
+}
 
+.pricing-item .pricing-title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    color: var(--third-color);
+}
 
+.pricing-item .pricing-desc{
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.pricing-item .pricing-desc span{
+    font-size: 3rem;
+    padding: 0 0.5rem;
+}
+
+.pricing-item .pricing-info{
+    padding-bottom: 0.8rem;
+    font-size: 1.4rem;
+    color: var(--forth-color);
+}
+
+.pricing-item .pricing-del{
+    padding-bottom: 1.5rem;
+    font-size: 1.4rem;
+    color: var(--third-color)
+}
+
+.pricing-item .btn{
+    background-color: var(--main-color);
+    border: none;
+}
+
+.pricing-item .btn:hover{
+   background-color: var(--forth-color);
+}
 
 
 
