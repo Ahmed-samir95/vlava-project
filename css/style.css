@@ -561,6 +561,63 @@ header{
     margin-bottom: 2rem;
 }
 
+.contact .contact-info{
+    background-color: var(--bg-color);
+    padding: 2rem 0;
+    text-align: center;
+}
+@media (min-width: 768px){
+    .contact .contact-info{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+        grid-gap: 2rem;
+    }
+}
+
+.contact .contact-info .contact-item{
+    margin-bottom: 1.5rem;
+}
+
+.contact .contact-info .contact-item i{
+    color: var(--forth-color);
+    font-size: 2rem;
+}
+
+.contact .contact-info .contact-item:hover i{
+    color: var(--main-color);
+}
+
+.contact .contact-info .contact-item h3{
+    color: var(--third-color);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.contact .contact-info .contact-item p{
+    color: var(--main-color);
+    font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
