@@ -55,6 +55,7 @@ img{
     text-align: center;
     transition: background-color .5s;
     margin: auto;
+    cursor: pointer;
 }
 .btn:hover{
     background-color: var(--main-color);
@@ -598,11 +599,37 @@ header{
     font-size: 1.6rem;
 }
 
+.form{
+    margin-top: 2rem;
+    background-color: var(--bg-color);
+    padding: 2rem;
+}
 
+.form form .control{
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
 
+.form form .control input,
+.form form .control textarea{
+    width: 100%;
+    padding: 1rem;
+}
 
+.form form .control input:focus,
+.form form .control textarea:focus{
+    border-color: var(--forth-color);
+}
 
+form .btn{
+    background-color: var(--main-color);
+    border: none;
+    
+}
 
+form .btn:hover{
+   background-color: var(--forth-color);
+}
 
 
 
