@@ -630,6 +630,66 @@ form .btn{
 form .btn:hover{
    background-color: var(--forth-color);
 }
+/* ---------------------------------------------------------------------------------------------------------- */
+/* footer */
+footer{
+    height: 50rem;
+    width: 100%;
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 50%);
+}
+
+.footer-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+}
+
+.footer-content .footer-title{
+    color: var(--wh-color);
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-desc{
+    font-size: 1.5rem;
+    color: var(--wh-color);
+    padding-bottom: 1.5rem;
+}
+
+.media i{
+    display: inline-block;
+    padding: 0 0.5rem;
+    font-size: 2rem;
+    color: var(--wh-color);
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+
+.media i:hover{
+    color: var(--forth-color);
+}
+
+
+
+
+
+
+
 
 
 
